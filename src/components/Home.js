@@ -1,32 +1,18 @@
 import React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
 import Carousel from 'react-bootstrap/Carousel';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 import Tabs from 'react-bootstrap/Tabs';
-
+import Tab from 'react-bootstrap/Tab';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
+import Navigation  from "./Navigation";
 
 function Home() {
     return (
         <>
-        <Navbar bg="light" expand="lg">
-            <Navbar.Brand href="#home">The YAY Company</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#news">News</Nav.Link>
-                <Nav.Link href="#contact">Contact</Nav.Link>
-                </Nav>
-                <Form inline>
-                <Form.Control type="text" placeholder="Search" className="mr-sm-2" />
-                <Button variant="outline-success">Go</Button>
-                </Form>
-            </Navbar.Collapse>
-        </Navbar>
+        <Navigation />
         <Carousel>
             <Carousel.Item>
                 <img
@@ -53,7 +39,7 @@ function Home() {
         <h1>We do YAY Things</h1>
         <p>Nam tincidunt, sapien nec congue porta, tellus risus ullamcorper mi, a rutrum justo eros pretium libero. Nullam vel enim id mauris eleifend finibus et ac orci. Aliquam metus massa, aliquam quis arcu sit amet, consectetur faucibus urna. Suspendisse massa diam, efficitur eu massa euismod, pretium lacinia magna. Donec mi orci, sollicitudin in luctus a, varius eget massa.</p>
         
-        <Accordion defaultActiveKey="0">
+        <Accordion defaultActiveKey="0" className="d-md-none">
             <Card>
                 <Accordion.Toggle as={Card.Header} eventKey="0">
                 First
@@ -106,8 +92,81 @@ function Home() {
                 </Accordion.Collapse>
             </Card>
         </Accordion>
-        
-        
+        <div className="d-none d-md-block">
+        <Tabs defaultActiveKey="first" id="uncontrolled-tab-example">
+            <Tab eventKey="first" title="First">
+                  <Card.Body>
+                    <Row>
+                        <Col sm={3}>
+                            <Card.Img src="/Tab images/tab-1.jpg" alt="first-tab"/>
+                        </Col>
+                        <Col sm={9}>
+                            <Card.Text>
+                            Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non maximus. Sed condimentum mattis rhoncus.
+                            </Card.Text>
+                        
+                            <Card.Link href="#">SHARE</Card.Link>
+                            <Card.Link href="#"><i class="fab fa-facebook-f"></i></Card.Link>
+                            <Card.Link href="#"><i class="fab fa-twitter"></i></Card.Link>           
+                        </Col>
+                    </Row>
+                 </Card.Body>
+            </Tab>
+            <Tab eventKey="second" title="Second">
+                  <Card.Body>
+                    <Row>
+                        <Col sm={3}>
+                            <Card.Img src="/Tab images/tab-2.jpg" alt="second-tab"/>
+                        </Col>
+                        <Col sm={9}>
+                            <Card.Text>
+                            Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non maximus. Sed condimentum mattis rhoncus.
+                            </Card.Text>
+                        
+                            <Card.Link href="#">SHARE</Card.Link>
+                            <Card.Link href="#"><i class="fab fa-facebook-f"></i></Card.Link>
+                            <Card.Link href="#"><i class="fab fa-twitter"></i></Card.Link>           
+                        </Col>
+                    </Row>
+                 </Card.Body>
+            </Tab>
+            <Tab eventKey="third" title="Third">
+                 <Card.Body>
+                    <Row>
+                        <Col sm={3}>
+                            <Card.Img src="/Tab images/tab-3.jpg" alt="third-tab"/>
+                        </Col>
+                        <Col sm={9}>
+                            <Card.Text>
+                            Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non maximus. Sed condimentum mattis rhoncus.
+                            </Card.Text>
+                        
+                            <Card.Link href="#">SHARE</Card.Link>
+                            <Card.Link href="#"><i class="fab fa-facebook-f"></i></Card.Link>
+                            <Card.Link href="#"><i class="fab fa-twitter"></i></Card.Link>           
+                        </Col>
+                    </Row>
+                 </Card.Body>
+            </Tab>
+        </Tabs>
+    </div>
+    <footer>
+        <Container>
+        <Row>
+            <Col xs={12} md={4}>
+                <i class="fab fa-vimeo-v"></i>
+                <i class="fab fa-youtube"></i>
+            </Col>
+            <Col>
+                <a href="mailto:hello@yay.com">hello@yay.com</a>
+            </Col>
+            <Col>
+                <p>Copyright &copy;2021</p>
+            </Col>
+        </Row>
+        </Container>
+    </footer>
+
         </>
     );
 }
