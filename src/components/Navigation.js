@@ -9,9 +9,9 @@ import {
     Route,
     NavLink
   } from "react-router-dom";
-  import Home from './home/Home.js';
-  import News from './news/News.js';
-  import Contact from './contact/Contact.js';
+  import Home from './home/Home';
+  import News from './news/News';
+  import Contact from './contact/Contact';
 
 
 function Navigation() {
@@ -24,8 +24,8 @@ function Navigation() {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <NavLink exact to="/" className="nav-link">Home</NavLink>
-                    <NavLink to="/News" className="nav-link">About</NavLink>
-                    <NavLink to="/Contact" className="nav-link">Dashboard</NavLink>
+                    <NavLink to="/news" className="nav-link">About</NavLink>
+                    <NavLink to="/contact" className="nav-link">Dashboard</NavLink>
                 </Nav>
                 <Form inline>
                 <Form.Control type="text" placeholder="Search" className="mr-sm-2" />
