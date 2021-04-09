@@ -1,100 +1,48 @@
-import React from 'react';
-
-const { Formik } = formik;
-
-const schema = yup.object().shape({
-  name: yup.string().required(),
-  email: yup.string().required(),
-  website: yup.string().required(),
-  terms: yup.bool().required().oneOf([true], 'Terms must be accepted'),
-});
+import React from 'react'
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
+import Button from 'react-bootstrap/Button';
 
 function ContactForm() {
   return (
-    <Formik
-      validationSchema={schema}
-      onSubmit={console.log}
-      initialValues={{
-        name: 'Mark Otto',
-        email: '',
-        website: '',
-        terms: false,
-      }}>
-      {({
-        handleSubmit,
-        handleChange,
-        handleBlur,
-        values,
-        touched,
-        isValid,
-        errors,
-      }) => (
-        <Form noValidate onSubmit={handleSubmit}>
-          <FormRow>
-            <Form.Group as={Col} xs="12" md="6" controlId="validationFormik01">
-              <Form.Label>Name</Form.Label>
-              <Form.Control
-                type="text"
-                name="name"
-                value={values.name}
-                onChange={handleChange}
-                isValid={touched.name && !errors.name}
-              />
-              <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-            </Form.Group>
-            <Form.Group as={Col} xs="12" md="6" controlId="validationFormik02">
-              <Form.Label>Email</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Email"
-                name="email"
-                value={values.email}
-                onChange={handleChange}
-                isInvalid={!!errors.email}
-              />
-
-              <Form.Control.Feedback type="invalid">
-                {errors.email}
-              </Form.Control.Feedback>
-            </Form.Group>
-            <Form.Group as={Col} xs="12" md="6" controlId="validationFormikWebsite">
-              <Form.Label>Website</Form.Label>
-              <InputGroup hasValidation>
-                <InputGroup.Prepend>
-                  <InputGroup.Text id="inputGroupPrepend">https://</InputGroup.Text>
-                </InputGroup.Prepend>
-                <Form.Control
-                  type="text"
-                  placeholder="Website"
-                  aria-describedby="inputGroupPrepend"
-                  name="website"
-                  value={values.website}
-                  onChange={handleChange}
-                  isInvalid={!!errors.website}
-                />
-                <Form.Control.Feedback type="invalid">
-                  {errors.website}
-                </Form.Control.Feedback>
-              </InputGroup>
-            </Form.Group>
-          </FormRow>
-          <Form.Row>
-          <Form.Group>
-            <Form.Check
-              required
-              name="terms"
-              label="Allow us to sell your personal details to whomever we want"
-              onChange={handleChange}
-              isInvalid={!!errors.terms}
-              feedback={errors.terms}
-              id="validationFormik0"
-            />
-          </Form.Group>
-          <Button type="submit">Submit</Button>
-        </Form>
-      )}
-    </Formik>
+    <Form>
+     <Form.Group controlId="exampleForm.ControlInput1">
+    <Form.Label>Email address</Form.Label>
+    <Form.Control type="email" placeholder="" />
+    </Form.Group>
+      <Form.Label htmlFor="formInputName2">
+        Name
+      </Form.Label>
+      <Form.Control
+        className="mb-2 mr-sm-2"
+        id="formInputName2"
+        placeholder=""
+      />
+      <label htmlFor="basic-url">Website</label>
+    <InputGroup className="mb-3">
+      <InputGroup.Prepend>
+        <InputGroup.Text id="basic-addon3">
+          https://
+        </InputGroup.Text>
+      </InputGroup.Prepend>
+      <Form.Control id="basic-url" aria-describedby="basic-addon3" />
+    </InputGroup>
+    <Form.Group controlId="exampleForm.ControlTextarea1">
+      <Form.Label>Message</Form.Label>
+      <Form.Control as="textarea" rows={5} />
+    </Form.Group>
+    <Form.Check
+      type="checkbox"
+      className="mb-2 mr-sm-2"
+      id="inlineFormCheck"
+      label="Allow us to sell your personal details to whomever we want"
+    />
+     
+    <Button type="submit" className="mb-2">
+      Submit
+    </Button>
+  </Form>
   );
 }
 
-render(<ContactForm />);
+export default ContactForm;

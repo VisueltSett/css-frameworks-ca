@@ -92,7 +92,7 @@ function Home() {
                 </Accordion.Collapse>
             </Card>
         </Accordion>
-        <div className="d-none d-md-block">
+        <iv className="d-none d-md-block">
         <Tabs defaultActiveKey="first" id="uncontrolled-tab-example">
             <Tab eventKey="first" title="First">
                   <Card.Body>
@@ -149,7 +149,7 @@ function Home() {
                  </Card.Body>
             </Tab>
         </Tabs>
-    </div>
+    </iv>
     <footer>
         <Container>
         <Row>
