@@ -6,7 +6,6 @@ import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import Container from 'react-bootstrap/Container';
 
 
 function Home() {
@@ -92,80 +91,66 @@ function Home() {
                 </Accordion.Collapse>
             </Card>
         </Accordion>
-        <iv className="d-none d-md-block">
-        <Tabs defaultActiveKey="first" id="uncontrolled-tab-example">
-            <Tab eventKey="first" title="First">
-                  <Card.Body>
-                    <Row>
-                        <Col sm={3}>
-                            <Card.Img src="/Tab images/tab-1.jpg" alt="first-tab"/>
-                        </Col>
-                        <Col sm={9}>
-                            <Card.Text>
-                            Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non maximus. Sed condimentum mattis rhoncus.
-                            </Card.Text>
-                        
-                            <Card.Link href="#">SHARE</Card.Link>
-                            <Card.Link href="#"><i class="fab fa-facebook-f"></i></Card.Link>
-                            <Card.Link href="#"><i class="fab fa-twitter"></i></Card.Link>           
-                        </Col>
-                    </Row>
-                 </Card.Body>
-            </Tab>
-            <Tab eventKey="second" title="Second">
-                  <Card.Body>
-                    <Row>
-                        <Col sm={3}>
-                            <Card.Img src="/Tab images/tab-2.jpg" alt="second-tab"/>
-                        </Col>
-                        <Col sm={9}>
-                            <Card.Text>
-                            Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non maximus. Sed condimentum mattis rhoncus.
-                            </Card.Text>
-                        
-                            <Card.Link href="#">SHARE</Card.Link>
-                            <Card.Link href="#"><i class="fab fa-facebook-f"></i></Card.Link>
-                            <Card.Link href="#"><i class="fab fa-twitter"></i></Card.Link>           
-                        </Col>
-                    </Row>
-                 </Card.Body>
-            </Tab>
-            <Tab eventKey="third" title="Third">
-                 <Card.Body>
-                    <Row>
-                        <Col sm={3}>
-                            <Card.Img src="/Tab images/tab-3.jpg" alt="third-tab"/>
-                        </Col>
-                        <Col sm={9}>
-                            <Card.Text>
-                            Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non maximus. Sed condimentum mattis rhoncus.
-                            </Card.Text>
-                        
-                            <Card.Link href="#">SHARE</Card.Link>
-                            <Card.Link href="#"><i class="fab fa-facebook-f"></i></Card.Link>
-                            <Card.Link href="#"><i class="fab fa-twitter"></i></Card.Link>           
-                        </Col>
-                    </Row>
-                 </Card.Body>
-            </Tab>
-        </Tabs>
-    </iv>
-    <footer>
-        <Container>
-        <Row>
-            <Col xs={12} md={4}>
-                <i class="fab fa-vimeo-v"></i>
-                <i class="fab fa-youtube"></i>
-            </Col>
-            <Col xs={6} md={4}>
-                <a href="mailto:hello@yay.com">hello@yay.com</a>
-            </Col>
-            <Col xs={6} md={4}>
-                <p>Copyright &copy;2021</p>
-            </Col>
-        </Row>
-        </Container>
-    </footer>
+        <div className="d-none d-md-block">
+            <Tabs defaultActiveKey="first" id="uncontrolled-tab-example">
+                <Tab eventKey="first" title="First">
+                    <Card.Body>
+                        <Row>
+                            <Col sm={3}>
+                                <Card.Img src="/Tab images/tab-1.jpg" alt="first-tab"/>
+                            </Col>
+                            <Col sm={9}>
+                                <Card.Text>
+                                Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non maximus. Sed condimentum mattis rhoncus.
+                                </Card.Text>
+                            
+                                <Card.Link href="#">SHARE</Card.Link>
+                                <Card.Link href="#"><i class="fab fa-facebook-f"></i></Card.Link>
+                                <Card.Link href="#"><i class="fab fa-twitter"></i></Card.Link>           
+                            </Col>
+                        </Row>
+                    </Card.Body>
+                </Tab>
+                <Tab eventKey="second" title="Second">
+                    <Card.Body>
+                        <Row>
+                            <Col sm={3}>
+                                <Card.Img src="/Tab images/tab-2.jpg" alt="second-tab"/>
+                            </Col>
+                            <Col sm={9}>
+                                <Card.Text>
+                                Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non maximus. Sed condimentum mattis rhoncus.
+                                </Card.Text>
+                            
+                                <Card.Link href="#">SHARE</Card.Link>
+                                <Card.Link href="#"><i class="fab fa-facebook-f"></i></Card.Link>
+                                <Card.Link href="#"><i class="fab fa-twitter"></i></Card.Link>           
+                            </Col>
+                        </Row>
+                    </Card.Body>
+                </Tab>
+                <Tab eventKey="third" title="Third">
+                    <Card.Body>
+                        <Row>
+                            <Col sm={3}>
+                                <Card.Img src="/Tab images/tab-3.jpg" alt="third-tab"/>
+                            </Col>
+                            <Col sm={9}>
+                                <Card.Text>
+                                Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non maximus. Sed condimentum mattis rhoncus.
+                                </Card.Text>
+                            
+                                <Card.Link href="#">SHARE</Card.Link>
+                                <Card.Link href="#"><i class="fab fa-facebook-f"></i></Card.Link>
+                                <Card.Link href="#"><i class="fab fa-twitter"></i></Card.Link>           
+                            </Col>
+                        </Row>
+                    </Card.Body>
+                </Tab>
+            </Tabs>
+            </div>
+    
+    
 
         </>
     );

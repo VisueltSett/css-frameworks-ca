@@ -3,15 +3,17 @@ import Card from 'react-bootstrap/Card';
 import NewsCardBody from './NewsCardBody';
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
+import PaginationList from './Pagination';
 
 function News() {
     return (
         <>
         <h1>News</h1>
+        <PaginationList />
         <Container>
         <Row>
 
-            <Card  border="light" style={{ width: '16rem' }}>
+            <Card border="light" style={{ width: '16rem' }}>
                 <Card.Img variant="top" src="/News images/news-1.jpg" />
                 <NewsCardBody />
             </Card>
@@ -45,7 +47,9 @@ function News() {
                 </Card>
          </Row>
          </Container>
-       
+         <div className="d-sm-none">
+            <PaginationList  />
+         </div>
         </>
     );
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './sass/styles.scss';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Form from 'react-bootstrap/Form';
@@ -13,6 +13,7 @@ import {
   import Home from './components/home/Home';
   import News from './components/news/News';
   import Contact from './components/contact/Contact';
+  import Footer from './components/Footer';
 
 function App() {
   return (
@@ -52,7 +53,7 @@ function App() {
       </Route>
     </Switch>
 </Router>
-
+<Footer />
     </>
 );
 }

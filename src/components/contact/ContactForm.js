@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 function ContactForm() {
   return (
     <Form>
+    <h1>Submit your details</h1>
      <Form.Group controlId="exampleForm.ControlInput1">
     <Form.Label>Email address</Form.Label>
     <Form.Control type="email" placeholder="" />
