@@ -24,9 +24,9 @@ body {
 
 footer {
 	flex-shrink: 0;
-	background: $;
+	background: $colour-input;
 	text-align: center;
 	padding: 1.5rem;
 	font-size: 0.9rem;
-	color: lighten($colour-body-text, 30%);
+	color: $colour-footer-text;
 }

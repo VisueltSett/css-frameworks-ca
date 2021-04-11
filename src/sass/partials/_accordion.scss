@@ -1,0 +1,10 @@
+.accordion {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	box-shadow: $shadow;
+
+	> .card {
+		border-radius: 12px;
+		background: none;
+	}
+}

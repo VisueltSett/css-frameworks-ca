@@ -1,0 +1,19 @@
+.btn-admin {
+    background-color: $colour-radial-bg;
+    color: $colour-input;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    &:hover {
+        color: $colour-input;
+        background-color: lighten($colour-secondary, 10%);
+    }
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+h2.form {
+    margin-top: 2.3rem;
+}

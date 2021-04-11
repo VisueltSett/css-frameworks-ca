@@ -10,6 +10,7 @@ $colour-radial-bg: radial-gradient(
 	rgba(229, 229, 229, 1) 100%
 );
 $colour-body-text: #0a0a0a;
+$colour-footer-text: #767676;
 
 $medium-width: 768px;
 
@@ -51,3 +52,4 @@ $font-family-sans-serif: "Lato", sans-serif;
 @import "./partials/layout";
 @import "./partials/tabs";
 @import "./partials/accordion";
+@import "./partials/cards"

@@ -39,7 +39,7 @@ function ContactForm() {
       label="Allow us to sell your personal details to whomever we want"
     />
      
-    <Button type="submit" className="mb-2">
+    <Button variant="admin" type="submit" className="mb-2">
       Submit
     </Button>
   </Form>
