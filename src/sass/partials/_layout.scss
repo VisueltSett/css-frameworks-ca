@@ -1,0 +1,32 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background: $colour-radial-bg;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.wrapper {
+	flex: 1 0 auto;
+	padding-bottom: 2rem;
+}
+
+footer {
+	flex-shrink: 0;
+	background: $;
+	text-align: center;
+	padding: 1.5rem;
+	font-size: 0.9rem;
+	color: lighten($colour-body-text, 30%);
+}

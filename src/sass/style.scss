@@ -1,9 +1,7 @@
-
-
 //Custom
 
 $colour-primary: #e92569;
-$colour-secondary:#efefef;
+$colour-secondary: #efefef;
 $colour-input: #ffffff;
 $colour-radial-bg: radial-gradient(
 	circle,
@@ -26,7 +24,7 @@ $input-border-bg: $colour-input;
 $border-radius: 10px;
 
 $headings-color: $colour-primary;
-$headings-font-family:  'Playfair Display', serif;
+$headings-font-family: "Playfair Display", serif;
 
 $body-bg: $colour-radial-bg;
 $body-color: $colour-body-text;
@@ -38,16 +36,18 @@ $input-padding-y: 0.8rem;
 $btn-padding-y: 0.6rem;
 $btn-padding-x: 1.2rem;
 
-
 $theme-colors: (
-    "primary": $colour-primary,
-    "light": $colour-secondary
+	"primary": $colour-primary,
+	"light": $colour-secondary,
 );
 
 $font-family-sans-serif: "Lato", sans-serif;
 
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
-
-
-
-@import "~bootstrap/scss/bootstrap";
+@import "./partials/typography";
+@import "./partials/contactForm";
+@import "./partials/navigation";
+@import "./partials/layout";
+@import "./partials/tabs";
+@import "./partials/accordion";
