@@ -17,7 +17,7 @@ function Navigation() {
     return (
         <>
          <Router>
-            <Navbar bg="light" expand="lg">
+            <Navbar bg="light" variant="light" expand="lg">
                 <Navbar.Brand href="#home">The YAY Company</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
