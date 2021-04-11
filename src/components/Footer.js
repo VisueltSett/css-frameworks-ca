@@ -10,8 +10,8 @@ function Footer() {
         <Container>
         <Row>
             <Col xs={12} md={4}>
-                <i class="fab fa-vimeo-v"></i>
-                <i class="fab fa-youtube"></i>
+                <i className="fab fa-vimeo-v"></i>
+                <i className="fab fa-youtube"></i>
             </Col>
             <Col xs={6} md={4}>
                 <a href="mailto:hello@yay.com">hello@yay.com</a>

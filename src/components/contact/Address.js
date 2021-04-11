@@ -5,9 +5,9 @@ function Address() {
     return (
         <div>
          <ListGroup variant="flush">
-            <ListGroup.Item> <i class="fas fa-envelope"></i> hello@yay.com</ListGroup.Item>
-            <ListGroup.Item> <i class="fas fa-phone"></i> 123 456 7890</ListGroup.Item>
-            <ListGroup.Item>  <i class="fas fa-map-marker-alt"></i> 
+            <ListGroup.Item> <i className="fas fa-envelope"></i> hello@yay.com</ListGroup.Item>
+            <ListGroup.Item> <i className="fas fa-phone"></i> 123 456 7890</ListGroup.Item>
+            <ListGroup.Item>  <i className="fas fa-map-marker-alt"></i> 
                         123 Some Street
                         Somewhere
                         Some City

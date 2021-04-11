@@ -14,35 +14,35 @@ function News() {
         <Row>
 
             <Card border="light" style={{ width: '16rem' }}>
-                <Card.Img variant="top" src="/News images/news-1.jpg" />
+                <Card.Img variant="top" src="/newsImages/news-1.jpg" />
                 <NewsCardBody />
             </Card>
             <Card  border="light" style={{ width: '16rem' }}>
-                <Card.Img variant="top" src="/News images/news-2.jpg" />
+                <Card.Img variant="top" src="/newsImages/news-2.jpg" />
                 <NewsCardBody />
             </Card>
             <Card  border="light" style={{ width: '16rem' }}>
-                <Card.Img variant="top" src="/News images/news-3.jpg" />
+                <Card.Img variant="top" src="/newsImages/news-3.jpg" />
                 <NewsCardBody />
             </Card>
             <Card  border="light" style={{ width: '16rem' }}>
-                <Card.Img variant="top" src="/News images/news-4.jpg" />
+                <Card.Img variant="top" src="/newsImages/news-4.jpg" />
                 <NewsCardBody />
             </Card>
             <Card  border="light" style={{ width: '16rem' }}>
-                    <Card.Img variant="top" src="/News images/news-5.jpg" />
+                    <Card.Img variant="top" src="/newsImages/news-5.jpg" />
                     <NewsCardBody />
                 </Card>
                 <Card  border="light" style={{ width: '16rem' }}>
-                    <Card.Img variant="top" src="/News images/news-6.jpg" />
+                    <Card.Img variant="top" src="/newsImages/news-6.jpg" />
                     <NewsCardBody />
                 </Card>
                 <Card  border="light" style={{ width: '16rem' }}>
-                    <Card.Img variant="top" src="/News images/news-7.jpg" />
+                    <Card.Img variant="top" src="/newsImages/news-7.jpg" />
                     <NewsCardBody />
                 </Card>
                 <Card  border="light" style={{ width: '16rem' }}>
-                    <Card.Img variant="top" src="/News images/news-8.jpg" />
+                    <Card.Img variant="top" src="/newsImages/news-8.jpg" />
                     <NewsCardBody />
                 </Card>
          </Row>
