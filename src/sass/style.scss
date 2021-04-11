@@ -1,7 +1,9 @@
+
+
 //Custom
 
 $colour-primary: #e92569;
-$colour-secondary: #efefef;
+$colour-secondary:#efefef;
 $colour-input: #ffffff;
 $colour-radial-bg: radial-gradient(
 	circle,
@@ -9,19 +11,40 @@ $colour-radial-bg: radial-gradient(
 	rgba(239, 239, 239, 1) 65%,
 	rgba(229, 229, 229, 1) 100%
 );
+$colour-body-text: #0a0a0a;
 
+$medium-width: 768px;
 
-
+$shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
 
 //Bootstrap
 
+$navbar-light-brand-color: $colour-primary;
+
+$input-border-color: white;
+$border-radius: 10px;
+
+$headings-color: $colour-primary;
+$headings-font-family:  'Playfair Display', serif;
+
+$body-bg: $colour-radial-bg;
+$body-color: $colour-body-text;
+
+$card-cap-bg: white;
+$card-border-color: white;
+$nav-link-padding-x: 1.5rem;
+$input-padding-y: 0.8rem;
+$btn-padding-y: 0.6rem;
+$btn-padding-x: 1.2rem;
+
+
 $theme-colors: (
-	"primary": $colour-primary,
-	"secondary": $colour-secondary,
-	"light": $colour-primary,
+    "primary": $colour-primary,
+    "light": $colour-secondary
 );
 
 $font-family-sans-serif: "Lato", sans-serif;
+
 
 
 
